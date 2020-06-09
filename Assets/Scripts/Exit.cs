@@ -8,16 +8,11 @@ public class Exit : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         Tilt.SetYouWinToTrue();
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.name == "Goal")
+        if (col.name == "Goal")
         {
             Destroy(gameObject, .4f);
             Debug.Log("You Win!");
         }
-
     }
 
 }

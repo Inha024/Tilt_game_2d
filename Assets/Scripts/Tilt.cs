@@ -86,6 +86,6 @@ public class Tilt : MonoBehaviour
 
     void RestartScene()
     {
-        SceneManager.LoadScene("Scene0");
+        SceneManager.LoadScene("Tilt_game");
     }
 }
